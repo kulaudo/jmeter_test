@@ -1,0 +1,12 @@
+cqscm -> cqsc
+jism-> jis
+bjsaiche 北京賽車-> bjsaiche
+gdkuaile 廣東快樂十分 -> gdkuaile
+jis 極速賽車(第三方) ->jis
+jism 極速賽車(自開) -> jism
+luckyfarm 幸運農場 -> luckyfarm
+Cqshishi 重慶時時 -> cqshishi
+cqsc 極速時時(第三方) ->cqsc
+cqscm 極速時時(自開) ->cqscm
+jisuklsf 極速快樂十分(第三方) ->jisuklsf
+jisuklsfm 極速快樂十分(自開) ->jisuklsfm

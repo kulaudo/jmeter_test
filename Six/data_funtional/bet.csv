@@ -1,0 +1,7 @@
+play_type,BetMoney,BetName,BetTypeId,BetItems,Detail,No,Name,Odds,SubBet,UseLastOdds,HandicapId
+特码,100,特码A-01,1,1,特码A,01,01,55,null,false,1
+特码,1,特码A-01,1,1,特码A,01,01,55,null,false,1
+特码,49,特码A-01,1,1,特码A,01,01,55,null,false,1
+特码,1,特码A-01,1,1,特码A,01,01,55,null,false,1
+特码,9,特码A-01,1,1,特码A,01,01,55,null,false,1
+特码,1,特码A-01,1,1,特码A,01,01,55,null,false,1
