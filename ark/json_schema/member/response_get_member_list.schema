@@ -1,0 +1,397 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "The Root Schema",
+	"required": [
+		"Status",
+		"Data"
+	],
+	"properties": {
+		"Status": {
+			"$id": "#/properties/Status",
+			"type": "integer",
+			"title": "The Status Schema",
+			"default": 0,
+			"examples": [
+				1
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data Schema",
+			"required": [
+				"SearchModel",
+				"MemberList"
+			],
+			"properties": {
+				"SearchModel": {
+					"$id": "#/properties/Data/properties/SearchModel",
+					"type": "object",
+					"title": "The Searchmodel Schema",
+					"required": [
+						"MemberLevel",
+						"ParentId",
+						"Status",
+						"MoneyType",
+						"Account",
+						"MemberType",
+						"PageIndex",
+						"PageSize",
+						"RecordCount"
+					],
+					"properties": {
+						"MemberLevel": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/MemberLevel",
+							"type": "integer",
+							"title": "The Memberlevel Schema",
+							"default": 0,
+							"examples": [
+								1
+							]
+						},
+						"ParentId": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/ParentId",
+							"type": "integer",
+							"title": "The Parentid Schema",
+							"default": 0,
+							"examples": [
+								0
+							]
+						},
+						"Status": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/Status",
+							"type": "integer",
+							"title": "The Status Schema",
+							"default": 0,
+							"examples": [
+								1
+							]
+						},
+						"MoneyType": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/MoneyType",
+							"type": "integer",
+							"title": "The Moneytype Schema",
+							"default": 0,
+							"examples": [
+								0
+							]
+						},
+						"Account": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/Account",
+							"type": "string",
+							"title": "The Account Schema",
+							"default": "",
+							"examples": [
+								""
+							],
+							"pattern": "^(.*)$"
+						},
+						"MemberType": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/MemberType",
+							"type": "integer",
+							"title": "The Membertype Schema",
+							"default": 0,
+							"examples": [
+								0
+							]
+						},
+						"PageIndex": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/PageIndex",
+							"type": "integer",
+							"title": "The Pageindex Schema",
+							"default": 0,
+							"examples": [
+								1
+							]
+						},
+						"PageSize": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/PageSize",
+							"type": "integer",
+							"title": "The Pagesize Schema",
+							"default": 0,
+							"examples": [
+								30
+							]
+						},
+						"RecordCount": {
+							"$id": "#/properties/Data/properties/SearchModel/properties/RecordCount",
+							"type": "integer",
+							"title": "The Recordcount Schema",
+							"default": 0,
+							"examples": [
+								24
+							]
+						}
+					}
+				},
+				"MemberList": {
+					"$id": "#/properties/Data/properties/MemberList",
+					"type": "array",
+					"title": "The Memberlist Schema",
+					"items": {
+						"$id": "#/properties/Data/properties/MemberList/items",
+						"type": "object",
+						"title": "The Items Schema",
+						"required": [
+							"MemberId",
+							"MemberLevel",
+							"Account",
+							"Nickname",
+							"Handicap",
+							"TotalHoldRate",
+							"Credit",
+							"Balance",
+							"IsFllowBet",
+							"CreatedTime",
+							"IsDisabled",
+							"IsPaused",
+							"IsLocked",
+							"IsOnline",
+							"IsViewSummaryReport",
+							"IsAllowSell",
+							"IsCompanyHoldLeft",
+							"IsMaxLostMoney",
+							"ProxyArray"
+						],
+						"properties": {
+							"MemberId": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/MemberId",
+								"type": "integer",
+								"title": "The Memberid Schema",
+								"default": 0,
+								"examples": [
+									15
+								]
+							},
+							"MemberLevel": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/MemberLevel",
+								"type": "integer",
+								"title": "The Memberlevel Schema",
+								"default": 0,
+								"examples": [
+									1
+								]
+							},
+							"Account": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/Account",
+								"type": "string",
+								"title": "The Account Schema",
+								"default": "",
+								"examples": [
+									"Lv1abc1"
+								],
+								"pattern": "^(.*)$"
+							},
+							"Nickname": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/Nickname",
+								"type": "string",
+								"title": "The Nickname Schema",
+								"default": "",
+								"examples": [
+									"Lv1abc1"
+								],
+								"pattern": "^(.*)$"
+							},
+							"Handicap": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/Handicap",
+								"type": "string",
+								"title": "The Handicap Schema",
+								"default": "",
+								"examples": [
+									"A,B,C,D,E,F,G,H,I"
+								],
+								"pattern": "^(.*)$"
+							},
+							"TotalHoldRate": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/TotalHoldRate",
+								"type": "number",
+								"title": "The Totalholdrate Schema",
+								"default": 0.0,
+								"examples": [
+									0.95
+								]
+							},
+							"Credit": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/Credit",
+								"type": "integer",
+								"title": "The Credit Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"Balance": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/Balance",
+								"type": "integer",
+								"title": "The Balance Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsFllowBet": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsFllowBet",
+								"type": "integer",
+								"title": "The Isfllowbet Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"CreatedTime": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/CreatedTime",
+								"type": "string",
+								"title": "The Createdtime Schema",
+								"default": "",
+								"examples": [
+									"2019-11-07 12:10:08"
+								],
+								"pattern": "^(.*)$"
+							},
+							"IsDisabled": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsDisabled",
+								"type": "integer",
+								"title": "The Isdisabled Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsPaused": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsPaused",
+								"type": "integer",
+								"title": "The Ispaused Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsLocked": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsLocked",
+								"type": "integer",
+								"title": "The Islocked Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsOnline": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsOnline",
+								"type": "integer",
+								"title": "The Isonline Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsViewSummaryReport": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsViewSummaryReport",
+								"type": "integer",
+								"title": "The Isviewsummaryreport Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"IsAllowSell": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsAllowSell",
+								"type": "integer",
+								"title": "The Isallowsell Schema",
+								"default": 0,
+								"examples": [
+									1
+								]
+							},
+							"IsCompanyHoldLeft": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsCompanyHoldLeft",
+								"type": "integer",
+								"title": "The Iscompanyholdleft Schema",
+								"default": 0,
+								"examples": [
+									1
+								]
+							},
+							"IsMaxLostMoney": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/IsMaxLostMoney",
+								"type": "integer",
+								"title": "The Ismaxlostmoney Schema",
+								"default": 0,
+								"examples": [
+									0
+								]
+							},
+							"ProxyArray": {
+								"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray",
+								"type": "array",
+								"title": "The Proxyarray Schema",
+								"items": {
+									"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items",
+									"type": "object",
+									"title": "The Items Schema",
+									"required": [
+										"MemberId",
+										"MemberLevel",
+										"Account",
+										"HoldRate",
+										"Count"
+									],
+									"properties": {
+										"MemberId": {
+											"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items/properties/MemberId",
+											"type": "integer",
+											"title": "The Memberid Schema",
+											"default": 0,
+											"examples": [
+												0
+											]
+										},
+										"MemberLevel": {
+											"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items/properties/MemberLevel",
+											"type": "integer",
+											"title": "The Memberlevel Schema",
+											"default": 0,
+											"examples": [
+												1
+											]
+										},
+										"Account": {
+											"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items/properties/Account",
+											"type": "string",
+											"title": "The Account Schema",
+											"default": "",
+											"examples": [
+												""
+											],
+											"pattern": "^(.*)$"
+										},
+										"HoldRate": {
+											"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items/properties/HoldRate",
+											"type": "integer",
+											"title": "The Holdrate Schema",
+											"default": 0,
+											"examples": [
+												0
+											]
+										},
+										"Count": {
+											"$id": "#/properties/Data/properties/MemberList/items/properties/ProxyArray/items/properties/Count",
+											"type": "integer",
+											"title": "The Count Schema",
+											"default": 0,
+											"examples": [
+												0
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

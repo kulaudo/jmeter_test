@@ -1,0 +1,127 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "The Root Schema",
+	"required": [
+		"Status",
+		"Data"
+	],
+	"properties": {
+		"Status": {
+			"$id": "#/properties/Status",
+			"type": "integer",
+			"title": "The Status Schema",
+			"default": 0,
+			"examples": [
+				1
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data Schema",
+			"required": [
+				"CurrentMemberLevel",
+				"MemberCountList",
+				"OnLineMemberCount",
+				"OnlineProxyCount",
+				"OnlineMaxMemberCount",
+				"OnlineMaxProxyCount"
+			],
+			"properties": {
+				"CurrentMemberLevel": {
+					"$id": "#/properties/Data/properties/CurrentMemberLevel",
+					"type": "integer",
+					"title": "The Currentmemberlevel Schema",
+					"default": 0,
+					"examples": [
+						0
+					]
+				},
+				"MemberCountList": {
+					"$id": "#/properties/Data/properties/MemberCountList",
+					"type": "array",
+					"title": "The Membercountlist Schema",
+					"items": {
+						"$id": "#/properties/Data/properties/MemberCountList/items",
+						"type": "object",
+						"title": "The Items Schema",
+						"required": [
+							"Level",
+							"LevelName",
+							"MemberCount"
+						],
+						"properties": {
+							"Level": {
+								"$id": "#/properties/Data/properties/MemberCountList/items/properties/Level",
+								"type": "integer",
+								"title": "The Level Schema",
+								"default": 0,
+								"examples": [
+									1
+								]
+							},
+							"LevelName": {
+								"$id": "#/properties/Data/properties/MemberCountList/items/properties/LevelName",
+								"type": "string",
+								"title": "The Levelname Schema",
+								"default": "",
+								"examples": [
+									"二级代理"
+								],
+								"pattern": "^(.*)$"
+							},
+							"MemberCount": {
+								"$id": "#/properties/Data/properties/MemberCountList/items/properties/MemberCount",
+								"type": "integer",
+								"title": "The Membercount Schema",
+								"default": 0,
+								"examples": [
+									25
+								]
+							}
+						}
+					}
+				},
+				"OnLineMemberCount": {
+					"$id": "#/properties/Data/properties/OnLineMemberCount",
+					"type": "integer",
+					"title": "The Onlinemembercount Schema",
+					"default": 0,
+					"examples": [
+						0
+					]
+				},
+				"OnlineProxyCount": {
+					"$id": "#/properties/Data/properties/OnlineProxyCount",
+					"type": "integer",
+					"title": "The Onlineproxycount Schema",
+					"default": 0,
+					"examples": [
+						1
+					]
+				},
+				"OnlineMaxMemberCount": {
+					"$id": "#/properties/Data/properties/OnlineMaxMemberCount",
+					"type": "integer",
+					"title": "The Onlinemaxmembercount Schema",
+					"default": 0,
+					"examples": [
+						0
+					]
+				},
+				"OnlineMaxProxyCount": {
+					"$id": "#/properties/Data/properties/OnlineMaxProxyCount",
+					"type": "integer",
+					"title": "The Onlinemaxproxycount Schema",
+					"default": 0,
+					"examples": [
+						0
+					]
+				}
+			}
+		}
+	}
+}
